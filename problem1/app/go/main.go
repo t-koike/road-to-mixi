@@ -2,11 +2,12 @@ package main
 
 import (
 	"database/sql"
-	_ "github.com/go-sql-driver/mysql"
-	"github.com/labstack/echo/v4"
 	"net/http"
 	"problem1/configs"
 	"strconv"
+
+	_ "github.com/go-sql-driver/mysql"
+	"github.com/labstack/echo/v4"
 )
 
 func main() {

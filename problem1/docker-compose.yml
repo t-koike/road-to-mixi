@@ -21,16 +21,16 @@ volumes:
 services:
   app:
     container_name: minimal_sns_app
-# NOTE: for ruby
-#    build: app/ruby
-#    volumes:
-#      - socket:/var/run/unicorn/
-# NOTE: for go
-#    build: app/go
-#    volumes:
-#      - ./app/go:/app
-#    ports:
-#      - "1323:1323"
+    # NOTE: for ruby
+    #    build: app/ruby
+    #    volumes:
+    #      - socket:/var/run/unicorn/
+    # NOTE: for go
+    build: app/go
+    volumes:
+      - ./app/go:/app
+    ports:
+      - "1323:1323"
     networks:
       - front
       - back

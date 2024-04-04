@@ -38,7 +38,7 @@ services:
       TZ: "Asia/Tokyo"
   db:
     image: mysql:latest
-    container_name: db
+    container_name: db-mixi
     hostname: db
     networks:
       - back
